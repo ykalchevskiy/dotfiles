@@ -1,7 +1,8 @@
 [alias]
+	a = add
 	ac = !git add . && git commit -m 
-	ci = commit
-	cim = commit -m 
+	c = commit
+	cm = commit -m 
 	co = checkout
 	p = push
 	st = status -sb
