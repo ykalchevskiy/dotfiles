@@ -1,16 +1,36 @@
 [alias]
-	a = add
-	ac = !git add . && git commit -m 
-	c = commit
-	cm = commit -m 
-	co = checkout
-	p = push
-	st = status -sb
-	un = reset HEAD
+        a = add
+        acm = !git add -A && git commit -m 
+        ap = add -p
+        b = branch
+        ba = branch -a
+        bd = branch -d 
+        c = commit
+        ca = commit --amend
+        cm = commit -m 
+        co = checkout
+        cob = checkout -b 
+        d = diff
+        dc = diff --cached
+        l = log --oneline
+        l7 = log --oneline -7
+        mnf = merge --no-ff
+        p = push
+        ps = push
+        pl = pull
+        st = status -sb
+        un = reset HEAD
 
 [color]
 	ui = auto
 
+[core]
+        editor = nano
+        excludesfile = ~/.gitignore
+
 [user]
 	email = <email>
 	name = <name>
+
+[push]
+        default = simple
