@@ -37,6 +37,19 @@ extract () {
 }
 
 mkcd() {
-    mkdir -p $1
-    cd $1
+    mkdir -p $1 && cd $1
+}
+
+tabname() {
+    # Set current tab name to a custom string or to the working dir (default)
+    if [ "$1" ]; then
+        printf "\e]1;$1\a"
+    else
+        printf "\e]1;${PWD##*/}\a"
+    fi
+}
+
+winname() {
+    # Set window name to a custom string
+    printf "\e]2;$1\a"
 }
