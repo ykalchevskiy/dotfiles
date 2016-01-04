@@ -18,6 +18,7 @@
         p = push
         ps = push
         pl = pull
+        pr = fetch --all --prune
         st = status -sb
         un = reset HEAD
 
