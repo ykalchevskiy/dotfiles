@@ -1,25 +1,39 @@
 [alias]
         a = add
-        acm = !git add -A && git commit -m 
+        aa = add -A
         ap = add -p
+        au = add -u
+        acm = !git add -A && git commit -m
+        ucm = !git add -u && git commit -m
+
         b = branch
         ba = branch -a
         bd = branch -d 
+        bD = branch -D
+
         c = commit
         ca = commit --amend
+        can = commit --amend --no-edit
         cm = commit -m 
+
         co = checkout
         cob = checkout -b 
+
         d = diff
         dc = diff --cached
+
         l = log --oneline
         l7 = log --oneline -7
+       
         mnf = merge --no-ff
+       
         p = push
         ps = push
         pl = pull
         pr = fetch --all --prune
+       
         st = status -sb
+       
         un = reset HEAD
 
 [color]
