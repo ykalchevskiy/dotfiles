@@ -1,10 +1,11 @@
 #!/bin/bash
 
 if [ "$(uname)" == "Linux" ]; then
-    alias ports="netstat -tulpn"
+    alias ports="netstat -tlpn"
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
+    alias ports="lsof -i -n -P | grep TCP"
     alias grep="grep --color=auto"
     alias ll="ls -alG"
 fi
