@@ -5,14 +5,13 @@ if [ "$(uname)" == "Linux" ]; then
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
-    alias ports="lsof -i -n -P | grep TCP"
+    alias ports="lsof -i TCP -n -P"
     alias grep="grep --color=auto"
     alias ll="ls -alG"
 fi
 
 alias ..="cd .."
-alias vrun="vagrant up && vagrant ssh"
-alias wcl="wc -l"
+alias vagrant_run="vagrant up && vagrant ssh"
 
 
 extract () {
