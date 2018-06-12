@@ -1,11 +1,18 @@
-# arrows
-"\e[A": history-search-backward
-"\e[B": history-search-forward
-
-# ctrl + arrows
-"\e[1;5A": history-search-backward
-"\e[1;5B": history-search-forward
-
 # pages
 "\e[5~": history-search-backward
 "\e[6~": history-search-forward
+
+TAB: menu-complete
+
+set completion-ignore-case on
+
+set show-all-if-ambiguous on
+
+
+# arrows
+#"\e[A": history-search-backward
+#"\e[B": history-search-forward
+
+# ctrl + arrows
+#"\e[1;5A": history-search-backward
+#"\e[1;5B": history-search-forward
